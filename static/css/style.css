@@ -1,0 +1,100 @@
+/* Economics Chatbot styles */
+/* File location: static/css/style.css */
+
+.message-content {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.user-input {
+    min-height: 50px;
+    max-height: 150px;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+.container {
+    max-width: 800px;
+}
+
+#chat-container {
+    height: calc(100vh - 120px);
+}
+
+#chat-messages {
+    scrollbar-width: thin;
+    scrollbar-color: #a0aec0 #edf2f7;
+}
+
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background: #edf2f7;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background-color: #a0aec0;
+    border-radius: 4px;
+}
+
+.user-message {
+    background-color: #ebf8ff;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.bot-message {
+    background-color: #f7fafc;
+    border-radius: 0.5rem 0.5rem 0.5rem 0;
+}
+
+#user-input {
+    border-color: #4299e1;
+}
+
+#user-input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+button[type="submit"] {
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3182ce;
+}
+
+/* 이미지 업로드 관련 스타일 추가 */
+#image-preview-container {
+    transition: all 0.3s ease;
+}
+
+#image-preview {
+    object-fit: contain;
+}
+
+#remove-image {
+    transition: all 0.2s ease;
+}
+
+#remove-image:hover {
+    background-color: #f56565;
+}
+
+/* 이미지가 있는 메시지 스타일 */
+.message-with-image {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.message-image {
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
